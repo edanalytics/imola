@@ -133,42 +133,46 @@ test_that("UI generation tests", {
   test_snapshots("flexPanel-empty", flexPanel, min_items = 0, max_items = 0)
   test_snapshots("flexPage-empty", flexPage, min_items = 0, max_items = 0)
 
-  # Tests all column test cases
+  # Tests all direction test cases
   lapply(names(test_cases$direction), function(case) {
     test_snapshots(
-      paste0("flexPanel-", case),
+      paste0("flexPanel-direction-", case),
       flexPanel,
       direction = test_cases$direction[[case]]
     )
   })
 
+  # Tests all wrap test cases
   lapply(names(test_cases$wrap), function(case) {
     test_snapshots(
-      paste0("flexPanel-", case),
+      paste0("flexPanel-wrap-", case),
       flexPanel,
       wrap = test_cases$wrap[[case]]
     )
   })
 
+  # Tests all justify_content test cases
   lapply(names(test_cases$justify_content), function(case) {
     test_snapshots(
-      paste0("flexPanel-", case),
+      paste0("flexPanel-justify_content-", case),
       flexPanel,
       justify_content = test_cases$justify_content[[case]]
     )
   })
 
+  # Tests all align_items test cases
   lapply(names(test_cases$align_items), function(case) {
     test_snapshots(
-      paste0("flexPanel-", case),
+      paste0("flexPanel-align_items-", case),
       flexPanel,
       align_items = test_cases$align_items[[case]]
     )
   })
 
+  # Tests all align_content test cases
   lapply(names(test_cases$align_content), function(case) {
     test_snapshots(
-      paste0("flexPanel-", case),
+      paste0("flexPanel-align_content-", case),
       flexPanel,
       align_content = test_cases$align_content[[case]]
     )

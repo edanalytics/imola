@@ -1,8 +1,6 @@
-library(shiny)
-
-# Retuns a html element to use for testing with specific styles
+# Returns a html element to use for testing with specific styles
 styled_div <- function(color, border, ...) {
-  div(
+  shiny::div(
     style = paste0(
       "background: ", color, "; ",
       "box-shadow: inset 0px 0px 0px 10px ", border, ";",
