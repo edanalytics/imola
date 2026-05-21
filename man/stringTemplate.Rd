@@ -7,9 +7,9 @@
 stringTemplate(string, ...)
 }
 \arguments{
-\item{string}{The string template. Uses the same format as the \link{htmlTemplate}
+\item{string}{The string template. Uses the same format as the \link[htmltools:htmlTemplate]{htmltools::htmlTemplate}
 function from shiny. placeholders in the template should use the
-{{placeholder}} format.}
+\{\{placeholder\}\} format.}
 
 \item{...}{Named arguments to use in the template string. All placeholders
 in the template string must have a corresponding named argument.}
@@ -18,9 +18,9 @@ in the template string must have a corresponding named argument.}
 A string.
 }
 \description{
-Processes a string template in the \link{htmlTemplate} format into a valid string
-with no placeholders. The string must use the \link{htmlTemplate} format, meaning
-placeholders are marked using the {{placeholder}} convention.
+Processes a string template in the \link[htmltools:htmlTemplate]{htmltools::htmlTemplate} format into a valid string
+with no placeholders. The string must use the \link[htmltools:htmlTemplate]{htmltools::htmlTemplate} format, meaning
+placeholders are marked using the \{\{placeholder\}\} convention.
 }
 \keyword{internal}
 \keyword{utils}

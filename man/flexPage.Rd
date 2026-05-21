@@ -15,11 +15,11 @@ flexPage(..., title = NULL, fill_page = TRUE, dependency = bootstrapLib())
 match the browser window height.}
 
 \item{dependency}{A set of web dependencies. This value can be a
-\link{htmlDependency}, for example the shiny bootstrap dependency (default
-value) or a \link{tagList} with different dependencies.}
+\link[htmltools:htmlDependency]{htmltools::htmlDependency}, for example the shiny bootstrap dependency (default
+value) or a \link[htmltools:tagList]{htmltools::tagList} with different dependencies.}
 }
 \value{
-A UI definition that can be passed to the \link{shinyUI} function.
+A UI definition that can be passed to the \link[shiny:shinyUI]{shiny::shinyUI} function.
 }
 \description{
 Create a Shiny UI page using a \link{flexPanel} to wrap the page content.
