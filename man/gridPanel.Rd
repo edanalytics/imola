@@ -26,8 +26,8 @@ Named arguments are treated as additional html attribute
 values to the parent tag, unless that name is used in the areas attribute
 as a grid area name.
 
-Child elements may include any combination of other tags objects, \link{HTML}
-strings, and \link{htmlDependency}s.}
+Child elements may include any combination of other tags objects, \link[htmltools:HTML]{htmltools::HTML}
+strings, and \link[htmltools:htmlDependency]{htmltools::htmlDependency}s.}
 
 \item{template}{The name of a registered template to use as a base for the
 grid, or a template object from \link{gridTemplate}.}
@@ -101,7 +101,7 @@ Supports breakpoints.}
 \item{id}{The parent element id.}
 }
 \value{
-An HTML \link{tagList}.
+An HTML \link[htmltools:tagList]{htmltools::tagList}.
 }
 \description{
 Creates a HTML tag and automatically generates css style rules based on css

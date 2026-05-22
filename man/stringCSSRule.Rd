@@ -18,8 +18,8 @@ A valid CSS string.
 }
 \description{
 Applies a CSS statement template stored in the package settings. These
-templates use the \link{htmlTemplate} format, meaning placeholders are marked
-using the {{placeholder}} convention.
+templates use the \link[htmltools:htmlTemplate]{htmltools::htmlTemplate} format, meaning placeholders are marked
+using the \{\{placeholder\}\} convention.
 Each placeholder value should be passed as a named argument to the function
 using the placeholder value as a name.
 Used primarily as a shorthand to \link{stringTemplate} for stored templates.

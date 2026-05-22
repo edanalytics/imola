@@ -27,11 +27,11 @@ generateID <- function() {
 #' @description
 #' Processes a string template in the [htmlTemplate] format into a valid string
 #' with no placeholders. The string must use the [htmlTemplate] format, meaning
-#' placeholders are marked using the {{placeholder}} convention.
+#' placeholders are marked using the \{\{placeholder\}\} convention.
 #'
 #' @param string The string template. Uses the same format as the [htmlTemplate]
 #'   function from shiny. placeholders in the template should use the
-#'   {{placeholder}} format.
+#'   \{\{placeholder\}\} format.
 #' @param ... Named arguments to use in the template string. All placeholders
 #'   in the template string must have a corresponding named argument.
 #'
@@ -51,7 +51,7 @@ stringTemplate <- function(string, ...) {
 #' @description
 #' Applies a CSS statement template stored in the package settings. These
 #' templates use the [htmlTemplate] format, meaning placeholders are marked
-#' using the {{placeholder}} convention.
+#' using the \{\{placeholder\}\} convention.
 #' Each placeholder value should be passed as a named argument to the function
 #' using the placeholder value as a name.
 #' Used primarily as a shorthand to [stringTemplate] for stored templates.
